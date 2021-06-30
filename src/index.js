@@ -1,1 +1,3 @@
-console.log("On step 4");
+import mainPage from './mainPage';
+
+mainPage();
