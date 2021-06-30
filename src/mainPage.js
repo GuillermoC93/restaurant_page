@@ -10,6 +10,9 @@ const mainPage = () => {
   const infoPara = document.createElement('p');
   const imgDiv = document.createElement('div');
   const footer = document.createElement('div');
+  const home = document.createElement('div');
+  const menu = document.createElement('div');
+  const contact = document.createElement('div');
 
   const content = document.getElementById('content');
 
@@ -24,12 +27,18 @@ const mainPage = () => {
   infoSubHead.textContent = "Mexican Restaurant"
   infoPara.textContent = "An authentic Mexican taste."
   footer.textContent = "Developed by Guillermo"
+  home.textContent = "Home"
+  menu.textContent = "Menu"
+  contact.textContent = "Contact"
 
   const indiaMaria = new Image();
   indiaMaria.src = Maria;
   imgDiv.appendChild(indiaMaria);
 
   content.appendChild(header);
+  header.appendChild(home);
+  header.appendChild(menu);
+  header.appendChild(contact);
   content.appendChild(info);
   info.appendChild(infoHeader);
   info.appendChild(infoSubHead);
