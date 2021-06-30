@@ -2,7 +2,7 @@ import './reset.css';
 import './styles.css';
 import Maria from './images/india_maria.jpg'
 
-const mainPage = () => {
+const homePage = () => {
   const header = document.createElement('div');
   const info = document.createElement('div');
   const infoHeader = document.createElement('div');
@@ -22,6 +22,10 @@ const mainPage = () => {
   infoSubHead.classList.toggle('info-subhead');
   imgDiv.classList.toggle('img-div');
   footer.classList.toggle('footer');
+
+  home.setAttribute('id', 'home');
+  menu.setAttribute('id', 'menu');
+  contact.setAttribute('id', 'contact');
 
   infoHeader.textContent = "Abuelita's"
   infoSubHead.textContent = "Mexican Restaurant"
@@ -47,4 +51,4 @@ const mainPage = () => {
   content.appendChild(footer);
 }
 
-export default mainPage
+export default homePage
