@@ -73,17 +73,43 @@ body, html {
 }
 
 .menu {
-  height: 700px;
-  width: 500px;
+  background-color: #f1ba55;
+  border-radius: 5%;
+  height: 600px;
+  width: 700px;
   margin: auto;
   margin-top: 100px;
-  background-color: black;
 }
 
 .contact {
-  height: 700px;
-  width: 500px;
+  background-color: #f1ba55;
+  border-radius: 5%;
+  height: 600px;
+  width: 700px;
   margin: auto;
   margin-top: 100px;
-  background-color: blue;
+}
+
+.contact-header {
+  display: flex;
+  justify-content: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 75px;
+  padding-top: 200px;
+  padding-bottom: 30px;
+}
+
+.phone {
+  display: flex;
+  justify-content: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  padding-bottom: 30px;
+}
+
+.email {
+  display: flex;
+  justify-content: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
 }

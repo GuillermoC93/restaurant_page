@@ -5,11 +5,9 @@ import contactPage from './contactPage';
 homePage();
 
 const content = document.querySelector('#content');
-const header = document.querySelector('.header');
 const footer = document.querySelector('.footer');
 
 const clearContent = () => {
-  console.log(content.firstChild);
   while (content.firstChild.nextSibling) {
     content.removeChild(content.firstChild.nextSibling); 
   }
@@ -19,11 +17,11 @@ const home = document.querySelector('#home');
 const menu = document.querySelector('#menu');
 const contact = document.querySelector('#contact');
 
+// click event listeners
 home.addEventListener('click', () => {
   clearContent();
   homePage();
   content.removeChild(content.firstChild.nextSibling);
-  console.log('home clicked');
 });
 
 menu.addEventListener('click', () => {
@@ -39,3 +37,20 @@ contact.addEventListener('click', () => {
   content.appendChild(footer);
   console.log('contact clicked');
 });
+
+// hover event listeners
+const orangeColor = () => {
+  event.target.style.color = "#f1ba55";
+};
+
+const yellowColor = () => {
+  event.target.style.color = "#eb882c";
+};
+
+home.addEventListener('mouseover', orangeColor);
+menu.addEventListener('mouseover', orangeColor);
+contact.addEventListener('mouseover', orangeColor);
+
+home.addEventListener('mouseout', yellowColor);
+menu.addEventListener('mouseout', yellowColor);
+contact.addEventListener('mouseout', yellowColor);
