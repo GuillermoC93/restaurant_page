@@ -44,7 +44,6 @@ const menuPage = () => {
   gorditas.textContent = "Gorditas";
   gorditasPrice.textContent = "6.99";  
 
-  content.appendChild(menu);
   menu.appendChild(menuHeader);
   menu.appendChild(enchiladas);
   menu.appendChild(enchiladasPrice);
@@ -57,6 +56,8 @@ const menuPage = () => {
   menu.appendChild(linebreak3);
   menu.appendChild(gorditas);
   menu.appendChild(gorditasPrice);
+
+  content.appendChild(menu);
 }
 
 export default menuPage
