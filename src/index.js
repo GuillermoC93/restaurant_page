@@ -6,16 +6,15 @@ homePage();
 
 const content = document.querySelector('#content');
 const footer = document.querySelector('.footer');
+const home = document.querySelector('#home');
+const menu = document.querySelector('#menu');
+const contact = document.querySelector('#contact');
 
 const clearContent = () => {
   while (content.firstChild.nextSibling) {
     content.removeChild(content.firstChild.nextSibling); 
   }
 };
-
-const home = document.querySelector('#home');
-const menu = document.querySelector('#menu');
-const contact = document.querySelector('#contact');
 
 // click event listeners
 home.addEventListener('click', () => {
@@ -28,14 +27,12 @@ menu.addEventListener('click', () => {
   clearContent();
   menuPage();
   content.appendChild(footer);
-  console.log('menu clicked');
 });
 
 contact.addEventListener('click', () => {
   clearContent();
   contactPage();
   content.appendChild(footer);
-  console.log('contact clicked');
 });
 
 // hover event listeners
